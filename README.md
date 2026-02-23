@@ -36,104 +36,135 @@ DriverDrowsinessDetection/
 ├── main.py                # Main execution file
 ├── requirements.txt       # Dependencies
 └── README.md
-⚙️ How It Works
-Capture live video using the webcam.
+```
 
-Detect face using a Haar Cascade classifier.
+## ⚙️ How It Works
 
-Extract the eye region from the detected face.
+### 🟢 Step 1: Capture Video
+* Capture live video using the webcam.
 
-Pass the eye image to the trained CNN model.
+### 🟢 Step 2: Face Detection
+* Detect face using **Haar Cascade classifier**.
 
-Evaluate state: If eyes are closed for consecutive frames:
+### 🟢 Step 3: Eye Extraction
+* Extract the eye region from the detected face.
 
-Trigger alarm sound.
+### 🟢 Step 4: Model Prediction
+* Pass the eye image into the trained **CNN model**.
 
-Display a warning on the screen.
+### 🟢 Step 5: Alert Mechanism
 
-🚀 Installation & Setup
-1️⃣ Clone the Repository
+If eyes remain closed for consecutive frames:
 
-Bash
-git clone [https://github.com/your-username/DriverDrowsinessDetection.git](https://github.com/your-username/DriverDrowsinessDetection.git)
+* 🔔 **Trigger alarm sound**
+* ⚠ **Display warning message on screen**
+
+---
+
+## 🚀 Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/DriverDrowsinessDetection.git
 cd DriverDrowsinessDetection
+```
+Display a warning on the screen.
 2️⃣ Create Virtual Environment (Optional but Recommended)
-
-Bash
-# On Windows
+🪟 Windows
+```
 python -m venv venv
 venv\Scripts\activate
-
-# On macOS/Linux
+```
+🍎 macOS / 🐧 Linux
+```
 python3 -m venv venv
 source venv/bin/activate
+```
 3️⃣ Install Dependencies
-
-Bash
+```
 pip install -r requirements.txt
+```
 4️⃣ Run the Project
-
-Bash
+```
 python main.py
-📊 Model Details
+```
+# 📊 Model Details
+
 Architecture: Convolutional Neural Network (CNN)
 
-Task: Binary Classification (Open Eyes / Closed Eyes)
+Classification Type: Binary (Open Eyes / Closed Eyes)
 
-Training: Trained on a dedicated eye image dataset.
+Training Dataset: Eye image dataset
 
-Performance: Optimized for high-speed, real-time inference.
+Performance: Optimized for real-time detection
 
-📷 Demo Output
-🟩 Green rectangle: Eyes Open
+# 📷 Demo Output
 
-🟥 Red rectangle + Alarm: Drowsiness Detected
+🟩 Green Rectangle → Eyes Open
 
-🔮 Future Improvements
-📱 Deploy as a mobile application.
+🟥 Red Rectangle + Alarm → Drowsiness Detected
 
-🚘 Integrate directly with vehicle systems.
+# 🔮 Future Enhancements
 
-🌙 Add yawning detection for multi-modal fatigue tracking.
+📱 Mobile application deployment
 
-☁ Deploy on edge devices like Raspberry Pi.
+🚘 Vehicle system integration
 
-📊 Add a dashboard for driver analytics.
+🌙 Yawning detection integration
 
-📈 Applications
+☁ Raspberry Pi / Edge deployment
+
+📊 Driver analytics dashboard
+
+# 📈 Applications
+
 Smart Vehicles
 
 Fleet Management Systems
 
 Public Transport Monitoring
 
-Driver Safety Systems
+Driver Safety Assistance Systems
 
-🧠 Learning Outcomes
+# 🧠 Learning Outcomes
+
 Real-time Computer Vision implementation
 
-CNN Model Training and Deployment
+CNN Model Training & Deployment
 
 OpenCV stream processing
 
-Developing AI applications for human safety
+AI-based human safety applications
 
-🤝 Contributing
+# 🤝 Contributing
+
 Contributions are welcome!
 
 Fork the repository
 
-Create a new branch (git checkout -b feature-branch)
+Create a new branch
+```
 
-Commit your changes (git commit -m "Add new feature")
-
-Push to the branch (git push origin feature-branch)
-
+git checkout -b feature-branch
+```
+Commit changes
+```
+git commit -m "Add new feature"
+```
+Push to GitHub
+```
+git push origin feature-branch
+```
 Submit a Pull Request
 
-📜 License
-This project is open-source and available under the MIT License.
+# 📜 License
 
-👨‍💻 Author
-Subhash Vadaparthi
-B.Tech Computer Science Engineering Student at Koneru Lakshmaiah Education Foundation | AI & Cloud Enthusiast
+This project is licensed under the MIT License.
+
+# 👨‍💻 Author
+
+## Subhash Vadaparthi
+B.Tech Computer Science Engineering
+Koneru Lakshmaiah Education Foundation
+AI & Cloud Enthusiast
