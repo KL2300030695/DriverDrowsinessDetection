@@ -4,10 +4,10 @@ emoji: 🚗
 colorFrom: blue
 colorTo: red
 sdk: gradio
-sdk_version: 4.21.0
 app_file: app.py
 pinned: false
 license: apache-2.0
+python_version: "3.10"
 ---
 
 # 🚗 Driver Drowsiness Monitoring System
@@ -23,16 +23,16 @@ The system continuously monitors the driver's face through a webcam and identifi
 ## 🎯 Features
 
 * **👁 Real-time eye detection:** Utilizes webcam feed for continuous monitoring.
-* **🧠 Facial Landmark Analysis:** Accurate detection using `dlib`'s 68-point landmark model.
+* **🧠 Facial Landmark Analysis:** Accurate detection using MediaPipe's high-fidelity mesh model.
 * **🔔 Live Analytics:** Displays EAR, blink count, and status on an interactive dashboard.
-* **⚡ Fast and lightweight:** Optimized for real-time web inference.
+* **⚡ Fast and lightweight:** Optimized for real-time web inference using MediaPipe.
 * **🖥 Easy Cloud/Local setup:** Run it as a Hugging Face Space or locally with Gradio.
 
 ## 🛠️ Tech Stack
 
 * **Python**
 * **OpenCV**
-* **Dlib** (Facial Landmarks)
+* **MediaPipe** (Facial Landmarks)
 * **Gradio** (Web Interface)
 * **SciPy** (EAR Calculation)
 
@@ -41,7 +41,6 @@ The system continuously monitors the driver's face through a webcam and identifi
 ```text
 DriverDrowsinessDetection/
 │
-├── shape_predictor_68_face_landmarks.dat  # Dlib model file
 ├── app.py                                # Main Gradio application
 ├── requirements.txt                      # Dependencies
 └── README.md
